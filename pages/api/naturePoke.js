@@ -2,6 +2,7 @@ import config from "../../config";
 const axios = require("axios");
 export default (req, res) => {
   const id = parseFloat(req.query.id);
+  console.log(id);
   axios
     .get(config.apiBaseUrl + `/nature/${id}`)
     .then((res2) => {

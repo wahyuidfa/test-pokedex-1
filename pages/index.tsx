@@ -98,12 +98,12 @@ const Home: React.FC = () => {
   };
 
   const handlePokemonClick = async (pokemon: Pokemon) => {
-    const getId: any = pokemon.url.match(/\d+/);
-    if (getId) {
-      const number: any = getId[0];
+    const lastSlashIndex = pokemon.url.split("/");
+    const getId = parseInt(lastSlashIndex[lastSlashIndex.length - 2]);
 
+    if (getId) {
       try {
-        const getNature = await axios.get(`/api/naturePoke?id=${number}`);
+        const getNature = await axios.get(`/api/naturePoke?id=${getId}`);
 
         const { move_battle_style_preferences } = getNature.data;
         setNature(move_battle_style_preferences);
