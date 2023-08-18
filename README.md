@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokedex App
 
-## Getting Started
+Pokedex App adalah aplikasi yang memungkinkan Anda menjelajahi informasi Pokemon melalui API PokeAPI. Anda dapat menjelajahi daftar Pokemon, melihat informasi terperinci tentang setiap Pokemon, melihat gambar Pokemon, dan menyaring daftar Pokemon berdasarkan sifat atau kemampuan.
 
-First, run the development server:
+## Cara Menjalankan Aplikasi Secara Lokal
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Berikut adalah langkah-langkah untuk menjalankan aplikasi Pokedex di komputer Anda:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prasyarat
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Node.js dan npm sudah terinstal di komputer Anda.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Langkah-langkah
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. **Clone Repositori**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   Clone repositori ini ke komputer Anda dengan menjalankan perintah berikut di terminal:
 
-## Learn More
+2. **Pindah ke Direktori Proyek**
 
-To learn more about Next.js, take a look at the following resources:
+Masuk ke direktori proyek yang telah di-clone:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Instal Dependensi**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Instal dependensi proyek dengan menjalankan perintah:
 
-## Deploy on Vercel
+4. **Jalankan Aplikasi**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jalankan aplikasi dengan perintah:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ini akan memulai server pengembangan dan membuka aplikasi di browser Anda.
+
+5. **Jelajahi Aplikasi**
+
+Buka browser dan akses `http://localhost:3000/` untuk melihat Pokedex App.
+
+### Menyesuaikan Konfigurasi API
+
+Jika Anda perlu menyesuaikan konfigurasi API, buka file `src/config.js` dan ubah URL PokeAPI sesuai kebutuhan.

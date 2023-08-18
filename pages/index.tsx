@@ -52,9 +52,7 @@ const Home: React.FC = () => {
     const fetchPokemon = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(
-          `https://pokeapi.co/api/v2/pokemon?limit=900`
-        );
+        const response = await axios.get("/api/listPokedex");
         setTimeout(() => {
           setLoading(false);
         }, 100);
@@ -105,9 +103,7 @@ const Home: React.FC = () => {
       const number: any = getId[0];
 
       try {
-        const getNature = await axios.get(
-          ` https://pokeapi.co/api/v2/nature/${number}`
-        );
+        const getNature = await axios.get(`/api/naturePoke?id=${number}`);
 
         const { move_battle_style_preferences } = getNature.data;
         setNature(move_battle_style_preferences);
